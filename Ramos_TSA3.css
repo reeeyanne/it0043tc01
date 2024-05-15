@@ -1,0 +1,44 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body{
+    color:black;
+    background-image: url(https://img.freepik.com/premium-photo/blur-abstract-sunset-sea-with-sun-waves-shining-light-water-blurred-background_104337-5605.jpg?w=900);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Radio Canada Big";
+}
+.hdex{
+    color:black; 
+    font-size: 6rem;
+    margin-bottom: 0px;
+}
+.boldd{
+    font-weight: bold;
+}
+.heading{
+    margin-top: 5px;
+    color: darkred;
+    font-size: 6.5rem;
+    margin-bottom: 10px;
+}
+
+.subheading{
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+
+.acp{
+    font-size: 1rem;
+    color:gray;
+}
+
+.wow{
+    margin-top: 20px;
+    font-family: "rubik";
+    font-size: 1.2rem;
+}
