@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+15&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url(Rosamarfamily.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jersey 15' , sans-serif;
+    font-style: normal;
+}
+.card{
+    width: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background: url(asd.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    text-align: center;
+   
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.image img{
+    width: 50%;
+    align-items: center;
+    box-shadow: 4px;
+}
+.details{
+    background-color: pink;
+    height: calc(20%);
+}
+.type{
+
+}
