@@ -1,0 +1,53 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Navigation{
+    background-color: green;
+}
+
+.Navigation .container{
+    color: gold;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    font-size: 2.5rem;
+}
+
+.Branches{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+li > a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+li > a:hover{
+    color: gold;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.main-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
