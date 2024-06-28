@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <meta http-equiv="refresh" content="">
+    <title>Flexbox</title>
+</head>
+<body>
+<div class="main-container">
+    <div class="container">
+        <button class="controls" onclick="resetFlexbox()" style="grid-column: 1/3;">Reset Flexbox</button>
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 10px; grid-column: 1 / span 2;">
+            <button class="controls" onclick="setGap()">Gap</button>
+            <input type="number" name="" id="gap" class="values" min="0" value="0">
+        </div>
+        <div style="grid-column: 1/3;">Flex Direction</div>
+        <button class="controls" onclick="setFlexDirection('row')">Row</button>
+        <button class="controls" onclick="setFlexDirection('column')">Column</button>
+        <div style="grid-column: 1/3;">Justify Content</div>
+        <button class="controls" onclick="setJustifyContent('flex-start')">Start</button>
+        <button class="controls" onclick="setJustifyContent('center')">Center</button>
+        <button class="controls" onclick="setJustifyContent('flex-end')">End</button>
+        <button class="controls" onclick="setJustifyContent('space-between')">Space Between</button>
+        <button class="controls" onclick="setJustifyContent('space-around')">Space Around</button>
+        <button class="controls" onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+        <div style="grid-column: 1/3;">Align Items</div>
+        <button class="controls" onclick="setAlignItems('flex-start')">Start</button>
+        <button class="controls" onclick="setAlignItems('center')">Center</button>
+        <button class="controls" onclick="setAlignItems('flex-end')">End</button>
+        <div style="grid-column: 1/3;">Flex Grow</div>
+        <button class="controls" onclick="resetFlexGrow()">Reset</button>
+        <button class="controls" onclick="setFlexGrowAll()">Grow All</button>
+        <button class="controls" onclick="setFlexGrow(1)">Box 1</button>
+        <input type="number" name="" id="grow-b1" class="values" min="0" value="0">
+        <button class="controls" onclick="setFlexGrow(2)">Box 2</button>
+        <input type="number" name="" id="grow-b2" class="values" min="0" value="0">
+        <button class="controls" onclick="setFlexGrow(3)">Box 3</button>
+        <input type="number" name="" id="grow-b3" class="values" min="0" value="0">
+    </div>
+
+    <div class="flexbox-container" id="flexboxContainer">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
