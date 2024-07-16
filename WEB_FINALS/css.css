@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("bg.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: rgb(68, 65, 65);
+
+}
+
+.menu {
+    display: flex; 
+    position: relative;
+    top: 0;
+    width: auto;
+    box-shadow: none;
+}
+
+
+.picz{
+    border-radius: 90%;
+    height:30vw;
+
+  }
+
+header {
+    background-color: #f874e2;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle:hover {
+    color: #4dacfa;
+}
+
+.name{
+    font-size: 50px;
+    background-color: none;
+}
+
+@media (max-width: 500px) {
+.picz img {
+    height: 40vw;
+    display: block;
+    margin: auto;
+}
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    display: none; 
+}
+
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #f874e2;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        border-bottom: 1px solid #444;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+.btn {
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #90d5f5;
+    color: #353535;
+    border: none;
+    border-radius: 5px 5px ;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(133, 214, 147);
+}
+
+.logo img {
+    height: 80px;
+    margin-left: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+
+#home {
+    background-color: none;
+    background-position: center;
+    text-align: center;
+}
+
+#about{
+    background-color: #f1bce9;
+}
+.about {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.portfolio-item1 {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio-item2 {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio-item3 {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.flexbox{
+    width: 900px;
+    height: 600px;
+}
+
+.portfolio-item4 {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.faq-item input[type="text"] {
+    width: calc(100% - 80px); 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d6d1d1;
+    border-radius: 5px;
+}
+
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgb(238, 156, 220);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(129, 122, 122, 0.1);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    
+}
+.faq-item button {
+    padding: 10px;
+    font-size: 10px;
+    display: inline-block;
+    background-color: #90d5f5;
+    color: #353535;
+    border: none;
+    border-radius: 5px 5px ;
+    cursor: pointer;
+}
+
+.faq-item button:hover{
+    font-size: 10px;
+    background-color: rgb(133, 214, 147);
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+}
+
+.faq-content p {
+    margin: 0;
+}
+
+.contact img{
+    height: 100px;
+    align-items:flex-end;
+    display:inline-block;
+}
+.contact {
+    color: #000000;
+    text-align: start;
+    border: 3px solid #000000;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #b655a6;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.socmed li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.socmed li a {
+    color: white;
+    text-decoration: none;
+}
+
